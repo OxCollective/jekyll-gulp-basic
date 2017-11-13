@@ -1,1 +1,0 @@
-# DCH Design System
