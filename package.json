@@ -1,0 +1,15 @@
+{
+  "name": "dch-design-system",
+  "version": "0.1.0",
+  "description": "Digital Concert Hall Design System",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+ "repository" :
+  { "type" : "git",
+ 	"url" : "https://github.com/OxCollective/dch-design-system.git"
+  },
+  "author": "Nando Rossi",
+  "license": "ISC"
+}
