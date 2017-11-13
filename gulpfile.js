@@ -6,7 +6,7 @@ const gutil = require('gulp-util');
 const browserSync = require('browser-sync').create();
 
 // File/folder location Variables
-const cssFiles = '_css/**/*.?(s)css';
+const cssFiles = '_sass/**/*.?(s)css';
 const siteRoot = '_site';
 
 // Begin Jekyll building task
@@ -30,7 +30,7 @@ gulp.task('jekyll', () => {
 // Browsersync server
 gulp.task('serve', () => {
   browserSync.init({
-    files: [siteRoot + '/**'],
+    files: [siteRoot + '/**/*'],
     port: 4000,
     server: {
       baseDir: siteRoot

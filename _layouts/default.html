@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
+        <link rel="stylesheet" href="{{site.baseurl}}/assets/style.css" />
+        <meta name="description" content="{{site.description}}"/>
+        <meta name="author" content="{{site.author}}"/>
+        <link rel="author" href="humans.txt"/>
+        <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{site.baseurl}}/feed.xml" />
+        <!--[if IE 7]><link rel="stylesheet" href="{{site.baseurl}}/resources/fontello/css/fontello-ie7.css"><![endif]-->
+    </head>
+
+    <body>
+        <nav class="column bottom">
+            <h4>Components</h4>
+
+            <ul>
+                <li><a href="{{site.baseurl}}/">Home</a></li>
+                <li><a href="">Featured Content Area</a></li>
+            </ul>
+        </nav>
+
+        <main class="column bottom">
+
+            {{ content }}
+
+        </main>
+
+        <script src="{{site.baseurl}}/scripts.js"></script>
+    </body>
+
+</html>

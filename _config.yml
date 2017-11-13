@@ -26,7 +26,7 @@ github_username:  OxCollective
 
 # Build settings
 markdown: kramdown
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
 
