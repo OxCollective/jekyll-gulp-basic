@@ -44,7 +44,7 @@ gulp.task('css', () => {
   gulp.src(cssFiles)
   	.pipe(sass())
     .pipe(concat('style.css'))
-    .pipe(gulp.dest('assets'))
+    .pipe(gulp.dest('assets/css'))
 });
 
 gulp.task('default', ['css', 'jekyll', 'serve']);
