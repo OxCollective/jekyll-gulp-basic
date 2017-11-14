@@ -1,12 +1,53 @@
-.column {
-    height: 100%;  /*allows both columns to span the full height of the browser window*/
-    display: flex;
-    flex-direction: column;  /*places the left and right headers above the bottom content*/
-    margin-right: 10px;
-    margin-left: 10px;
+* , :after, :before {
+    box-sizing: inherit;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 
-.bottom {
-    flex-grow: 1;  /*ensures that the container will take up the full height of the parent container*/
-    overflow-y: auto;  /*adds scroll to this container*/
+.app {
+	width: 100%;
+	min-height: 100vh;
+	display: -ms-flexbox;
+	display: flex;
+	overflow: hidden;
+	position: relative;
+
+	&:before, &:after {
+		box-sizing: inherit;
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased
+	}
+}
+
+.sidenav {
+	height: 100%;
+	width: 200px;
+	padding: 0 16px;
+	color: #333;
+	background-color: #fff;
+	box-shadow: inset -1px 0 0 0 #e2e4e6;
+	z-index: 2;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow-y: auto;
+}
+
+.app__content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	padding: 5rem;
+	overflow-y: scroll;
+	transition: left .2s cubic-bezier(.17, .67, .83, .67);
+
+	@media screen and (min-width: 768px) {
+		width: calc(100% - 200px);
+	}
+
+	&.app__content--pushed {
+		left: 200px;
+	}
 }

@@ -13,20 +13,24 @@
     </head>
 
     <body>
-        <nav class="column bottom">
-            <h4>Components</h4>
+        <div id="root">
+            <div id="app">
+                <nav class="sidenav">
+                    <h4>Components</h4>
 
-            <ul>
-                <li><a href="{{site.baseurl}}/">Home</a></li>
-                <li><a href="">Featured Content Area</a></li>
-            </ul>
-        </nav>
+                    <ul>
+                        <li><a href="{{site.baseurl}}/">Home</a></li>
+                        <li><a href="">Featured Content Area</a></li>
+                    </ul>
+                </nav>
 
-        <main class="column bottom">
+                <main class="app__content app__content--pushed">
 
-            {{ content }}
+                    {{ content }}
 
-        </main>
+                </main>
+            </div> 
+        </div>
 
         <script src="{{site.baseurl}}/scripts.js"></script>
     </body>
