@@ -1,5 +1,50 @@
-nav {
+// Stole this notation from Trello, looks like it's a react thing. I'm down
+.app {
+	width: 100%;
+	min-height: 100vh;
+	display: -ms-flexbox;
+	display: flex;
+	overflow: hidden;
+	position: relative;
+
+	&:before, &:after {
+		box-sizing: inherit;
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased
+	}
 }
 
-main {
+// Sidenav that sticks to the left and scrolls independently
+.sidenav {
+	height: 100%;
+	width: 200px;
+	padding: 0 16px;
+	color: #333;
+	background-color: #eee;
+	// box-shadow: inset -1px 0 0 0 #e2e4e6;
+	z-index: 2;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow-y: auto;
+}
+
+// Content area
+.app__content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	padding: 5rem;
+	overflow-y: scroll;
+	transition: left .2s cubic-bezier(.17, .67, .83, .67);
+
+	@media screen and (min-width: 768px) {
+		width: calc(100% - 200px);
+	}
+
+	&.app__content--pushed {
+		left: 200px;
+	}
 }
