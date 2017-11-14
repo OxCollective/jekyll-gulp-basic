@@ -1,0 +1,4 @@
+- Components
+	- [Featured Content Area]({{site.baseurl}}/)
+	- Content List (Horizontal)
+	- Content List (Vertical)

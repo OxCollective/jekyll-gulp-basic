@@ -9,12 +9,8 @@
         <div id="root">
             <div id="app">
                 <nav class="sidenav">
-                    <h4>Components</h4>
-
-                    <ul>
-                        <li><a href="{{site.baseurl}}/">Home</a></li>
-                        <li><a href="">Featured Content Area</a></li>
-                    </ul>
+                {% capture my_include %}{% include sidebar.md %}{% endcapture %}
+                {{ my_include | markdownify }}
                 </nav>
 
                 <main class="app__content app__content--pushed">
