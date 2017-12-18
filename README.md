@@ -1,4 +1,8 @@
-# DCH Design System
+# Jekyll + Gulp Barebones Setup
+
+This is a simple Jekyll + gulp setup. Fork me to get a quick start
+
+
 
 ## References
 

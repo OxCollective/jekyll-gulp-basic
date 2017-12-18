@@ -1,12 +1,12 @@
 {
-  "name": "dch-design-system",
+  "name": "gulp-jekyll-barebones",
   "version": "0.1.0",
-  "description": "Digital Concert Hall Design System",
+  "description": "A very basic barebones implementation of Jekyll + gulp",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "https://github.com/OxCollective/dch-design-system.git",
+  "repository": "https://github.com/OxCollective/jekyll-gulp-basic.git",
   "author": "Nando Rossi",
   "license": "ISC",
   "devDependencies": {
